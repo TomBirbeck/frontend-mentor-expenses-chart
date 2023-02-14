@@ -14,6 +14,8 @@ const createBars = (item) => {
         }
         bars[i].style.height = `${height}rem`
         amount[i].textContent = '$'+ data[i].amount
+        bars[i].addEventListener('mouseenter', () => {amount[i].classList.remove('hidden')})
+        bars[i].addEventListener('mouseleave', () => {amount[i].classList.add('hidden')})
    }
 }
 
