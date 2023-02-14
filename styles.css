@@ -22,11 +22,15 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--cream);
+    font-size: 18px;
+}
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    height: 97vh;
 }
 
 .balance-container {
