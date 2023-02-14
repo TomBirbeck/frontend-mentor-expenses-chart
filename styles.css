@@ -5,11 +5,15 @@
 --medium-brown: hsl(28, 10%, 53%);
 --cream: hsl(27, 66%, 92%);
 --very-pale-orange: hsl(33, 100%, 98%);
-font-family: 'DM Sans', sans-serif;
+--main-font: 'DM Sans', sans-serif;
+--header-font-weight: 700;
+--text-font-weight: 400;
 }
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -26,20 +30,30 @@ body {
 }
 
 .balance-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--soft-red);
     width: 40vw;
-    height: 15vh;
+    height: 16vh;
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem 2rem 1rem 1.5rem;
 }
 
+
 .balance-header {
+font-family: var(--main-font);
+font-weight: var(--text-font-weight);
+font-size: 12px;
 color: var(--very-pale-orange);
-font-size: 15px;
+padding: 0.3rem 0 0.3rem 0.1rem;
 }
 
 .balance-text {
+    font-family: var(--main-font);
+    font-weight: var(--header-font-weight);
     color: var(--very-pale-orange);
+    font-size: 24px;
 }
 
 .chart-container {
@@ -48,16 +62,73 @@ font-size: 15px;
     width: 40vw;
     height: 60vh;
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem 1.5rem;
 }
 
 .chart {
     display: flex;
     justify-content: space-between;
+    height: 32vh;
+}
+
+.chart-header {
+    font-family: var(--main-font);
+    font-weight: var(--header-font-weight);
+    font-size: 24px;
+}
+
+.chart-item {
+    align-self: flex-end;
+    width: 10%;
+}
+
+.chart-bar {
+    background-color: var(--soft-red);
+    height: 2rem;
+    border-radius: 0.3rem;
+}
+
+.chart-bar-text {
+    font-family: var(--main-font);
+    font-weight: var(--text-font-weight);
+    text-align: center;
+    color: var(--medium-brown);
+}
+
+hr {
+    margin: 1.5rem 0;
+    color: var(var(--medium-brown));
 }
 
 .chart-totals {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.monthly-total-header {
+    font-family: var(--main-font);
+    font-weight: var(--text-font-weight);
+    font-size: 12px;
+    color: var(--medium-brown)
+}
+
+.monthly-total {
+    font-family: var(--main-font);
+    font-weight: var(--header-font-weight);
+    font-size: 30px;
+}
+
+.monthly-increase-header {
+    font-family: var(--main-font);
+    font-weight: var(--header-font-weight);
+}
+
+.monthly-increase-text {
+    font-family: var(--main-font);
+    font-weight: var(--text-font-weight);
+    font-size: 12px;
+    color: var(--medium-brown);
 }
 
 .attribution {
