@@ -38,8 +38,8 @@ main {
     align-items: center;
     justify-content: space-between;
     background-color: var(--soft-red);
-    width: 40vw;
-    height: 16vh;
+    width: 34rem;
+    height: 7rem;
     border-radius: 1rem;
     padding: 1rem 2rem 1rem 1.5rem;
 }
@@ -57,14 +57,14 @@ padding: 0.3rem 0 0.3rem 0.1rem;
     font-family: var(--main-font);
     font-weight: var(--header-font-weight);
     color: var(--very-pale-orange);
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .chart-container {
     margin-top: 1rem;
     background-color: var(--very-pale-orange);
-    width: 40vw;
-    height: 60vh;
+    width: 34rem;
+    height: 25rem;
     border-radius: 1rem;
     padding: 1rem 1.5rem;
 }

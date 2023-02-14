@@ -8,7 +8,7 @@ const date = new Date().getDay()
 
 const createBars = (item) => {
     for (let i = 0; i < data.length; i++) {
-        const height = Math.round((item[i].amount/100) * 12)
+        const height = Math.round((item[i].amount/100) * 18)
         if (date === i + 1){
             bars[i].classList.add('today')
         }
