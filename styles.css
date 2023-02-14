@@ -17,7 +17,7 @@
 }
 
 body {
-    width: 1440px;
+    width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -68,7 +68,7 @@ padding: 0.3rem 0 0.3rem 0.1rem;
 .chart {
     display: flex;
     justify-content: space-between;
-    height: 32vh;
+    height: 14rem;
 }
 
 .chart-header {
@@ -82,9 +82,23 @@ padding: 0.3rem 0 0.3rem 0.1rem;
     width: 10%;
 }
 
+.chart-bar-total {
+background-color: var(--dark-brown);
+font-family: var(--main-font);
+color: var(--cream);
+text-align: center;
+padding-top: 0.5rem;
+height: 2rem;
+border-radius: 0.3rem;
+margin-bottom: 0.3rem;
+font-size: 13px;
+}
+
 .chart-bar {
     background-color: var(--soft-red);
     height: 2rem;
+    margin-left: 10%;
+    width: 80%;
     border-radius: 0.3rem;
 }
 
@@ -129,6 +143,14 @@ hr {
     font-weight: var(--text-font-weight);
     font-size: 12px;
     color: var(--medium-brown);
+}
+
+.today {
+    background-color: var(--cyan);
+}
+
+.hidden {
+    /* display: none; */
 }
 
 .attribution {
